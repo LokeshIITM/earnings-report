@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Reveal.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
+
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title Slide -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <p>Prepared by: 22f3000227@ds.study.iitm.ac.in</p>
+          <aside class="notes">
+            Welcome everyone. This presentation highlights our Q2 financial performance.
+          </aside>
+        </section>
+
+        <!-- Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+            ## Key Highlights (Q2 FY25)
+            - Revenue: **$12.4M**  
+            - Net Profit: **$3.2M**  
+            - YoY Growth: **15%**
+
+            *Positive growth trend continues.*
+          </textarea>
+        </section>
+
+        <!-- Animated (Fragments) -->
+        <section>
+          <h2>Revenue Breakdown</h2>
+          <ul>
+            <li class="fragment">North America: $5M</li>
+            <li class="fragment">Europe: $4.2M</li>
+            <li class="fragment">Asia: $3.2M</li>
+          </ul>
+          <aside class="notes">
+            Reveal each market step by step to emphasize contribution.
+          </aside>
+        </section>
+
+        <!-- Code Sample -->
+        <section>
+          <h2>Sample Analysis Code</h2>
+          <pre><code class="python">
+import pandas as pd
+
+# Dummy financial data
+data = {'Revenue':[12.4, 11.8, 13.2], 'Profit':[3.2, 2.9, 3.5]}
+df = pd.DataFrame(data)
+
+print(df.describe())
+          </code></pre>
+        </section>
+
+        <!-- Math Equation -->
+        <section>
+          <h2>Financial Formula</h2>
+          <p>Return on Equity (ROE):</p>
+          <p>$$ ROE = \frac{Net \ Income}{Shareholders' \ Equity} $$</p>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Reveal.js Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+      });
+    </script>
+  </body>
+</html>
